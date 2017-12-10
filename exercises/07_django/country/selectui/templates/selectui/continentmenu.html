@@ -1,0 +1,6 @@
+<!-- Write your answer in 7.3 here -->
+<ul id="continentMenu">
+    {% for continent in all_continents %}
+    <li><a href="/{{ continent.code }}.html">{{ continent.name }}</a></li>
+    {% endfor %}
+</ul>

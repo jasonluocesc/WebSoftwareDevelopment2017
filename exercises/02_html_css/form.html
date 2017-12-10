@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>form</title>
+</head>
+
+<body>
+  <form action="http://127.0.0.1/wsd/html_form_check" method="POST">
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="passwd">Password</label>
+      <input type="text" id="passwd" name="passwd">
+    </div>
+    <div>
+      <label for="passwd2">Repeat Password</label>
+      <input type="text" id="passwd2" name="passwd2">
+    </div>
+    <div>
+      <label for="lang">Language</label>
+      <select id="lang" name="lang">
+        <option value="sv">Svenska</option>
+        <option value="fi">Suomalainen</option>
+        <option value="da">Dansk</option>
+        <option value="no">Norsk</option>
+        <option value="is">íslensku</option>
+      </select>
+    </div>
+    <div>
+      <input type="checkbox" id="terms" name="terms">
+      <label for="terms">I accept the terms and conditions.</label>
+    </div>
+    <div class="button">
+      <button type="submit">Register</button>
+    </div>
+  </form>
+
+
+</body>
+
+</html>

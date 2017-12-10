@@ -1,0 +1,19 @@
+{
+  "name": "wsd-material",
+  "version": "1.0.0",
+  "description": "Material and Exercises for WSD 2016-2017",
+  "main": "index.js",
+  "author": "Lassi Haaranen",
+  "contributors": [
+    "Teemu Lehtinen",
+    "Otto Seppälä"
+  ],
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-linter": "^0.3.3",
+    "grunt-w3c-html-validation": "^0.1.6"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}

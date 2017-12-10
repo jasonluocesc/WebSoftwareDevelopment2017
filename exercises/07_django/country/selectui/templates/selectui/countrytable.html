@@ -1,0 +1,21 @@
+<!-- Write your answer in 7.3 here -->
+<table id="countryTable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Capital</th>
+        <th>Population</th>
+        <th>Area</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for country in countries %}
+    <tr>
+        <td>{{ country.name }}</td>
+        <td>{{ country.capital }}</td>
+        <td>{{ country.population }}</td>
+        <td>{{ country.area }} km<sup>2</sup></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

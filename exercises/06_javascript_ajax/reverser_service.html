@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="lib/jquery-3.2.1.min.js"></script>
+        <script>
+            function sendMSG(text){
+                var msg = {};
+                if(text==null)
+                {
+                    msg.payload = "INPUT CLEARED";
+
+                }
+
+                else
+                {
+
+                    var input = text;
+                    var output = input.split("").reverse().join("");
+                    msg.payload = output;
+
+                }
+                window.parent.postMessage(msg,'*');
+            }
+            $(document).ready(function()
+                              {
+                $("#reverser").submit(
+                    function(event){
+                        sendMSG($("#toBeReversed").val());
+                    }
+                );
+                $("#clearInput").click(
+                    function(){
+                        $("#toBeReversed").val("");
+                        sendMSG(null);
+                    }
+                );
+            });
+
+
+        </script> 
+    </head>
+
+    <body>
+        <form id="reverser">
+            <input  name="input" id="toBeReversed" text>
+            <input type="submit" id="submitReverser">
+        </form>
+
+        <button id="clearInput">Clear Input</button>
+
+
+    </body>
+</html> 

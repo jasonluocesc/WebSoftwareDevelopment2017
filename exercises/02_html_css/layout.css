@@ -1,0 +1,35 @@
+
+div #navigation{
+  border-bottom: solid;
+  border-color: black;
+  width: 100%;
+
+}
+div #navigation li {
+  display: inline;
+}
+div #aside{/*resources*/
+
+  border-color: black;
+  float: right;
+  width: 25%;
+
+
+}
+div #content{
+
+  border-color: black;
+  float: left;
+  width: 75%;
+  border-color: black;
+
+
+}
+body #footer{
+  border-top: solid;
+
+  border-color: black;
+  float:left;
+  width: 100%;
+  text-align: center;
+}
